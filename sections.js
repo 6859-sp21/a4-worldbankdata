@@ -42,7 +42,7 @@ function drawInitial(){
     
     
     svg.append('g').append('image').attr('class', 'nehruModi')
-    .attr('xlink:href', 'data/nehruModi.png')
+    .attr('xlink:href', 'nehruModi.png')
     .attr('width', 1000)
     .attr('height', 950)
     .attr('opacity', 1)
