@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js'></script>
+
+    <meta property='og:title' content='Best College Majors'/>
+    <meta property='og:image' content='https://github.com/cuthchow/college-majors-visualisation/blob/master/preview.png'/>
+    <meta property='og:description' content='This interactive, scrollable data visualisation will take you on a journey through all of the different college majors in the United States, and compare how they stack up in terms of median graduate salary, gender ratios, employability, and other factors. '/>
+    <meta property='og:url' content='https://cuthchow.github.io/college-majors-visualisation/'/>
+
+
+    <title>India Growth Story</title>
+</head>
+
+<!-- style="background-color:grey;" -->
+<body style="background-color:white;">
+    <!-- <div id="info">
+        a
+    </div> -->
+    <img src="https://github.com/cuthchow/college-majors-visualisation/blob/master/preview.png" alt="">
+    <div id="tooltip"></div>
+    <div id="graphic">
+        <div id="sections">
+            <section class="step">
+                <div class="title"></div>
+                <br><br>
+                <h1>India's growth story since 1960</h1>
+           
+                
+                <p>
+                    I downloaded world bank datasets to broadly understand how India has performed over 
+                    the years in certain parameters related to economics, education, and science and technology. 
+                    These datasets are titled: “economy-and-growth”, “education” and “science-and-technology”. 
+                    I do a comparitive assessment of India with its neighbour China, which was in a similar situation
+                    in the 60s. <br><br>
+
+                <br><br>
+                
+                
+                </p>
+                <p>Note: Please try to zoom in/out to adjust the visualizations to your screen </p>
+                
+            </section>
+            <section class="step">
+                <p>
+                    In early 1990s, both India and China underwent many economic reforms and both have made a huge progress since. However, 
+                    the growth in China’s Gross Domestic Product (GDP)  is much larger than India’s and that naturally begs the question: HOW? <br><br>
+                 <br>
+                </p>
+                <svg id = 'legend' width = '400px' height = '500px'></svg>
+            </section>
+            <section class = 'step'>
+                <svg id = 'legend2' width = '400px' height = '450px'></svg>
+                    <br><br>
+                The negative correlation does not imply that India’s GDP grows when its net trade of goods is negative. It possibly says that India’s GDP 
+                    would’ve been higher had this value been positive. GDP is a complex combination of many factors, some of which have been shown in the 
+                    previous plots. However, exported goods did indeed play a big role in China’s massive GDP growth   and India, clearly, is a net importer of goods.
+            </section>
+            <section class="step">
+                <br><br><br><br><br><br>
+                <p>
+                    Another key factor that was observed was the heavy investment in science and technology. China has seen an unprecedented rise in the number of patents filed
+                    since the early 90s. In fact, a positive correlation can be seen between the number of patents filed and the GDP growth over years for some other nations as well.
+
+                </p>
+                
+            </section>
+            <section class="step">
+                
+                <p>
+                    I next plotted a sum of total GDP between 2016 and 2017 and a sum of total patents filed between the same period. A positive correlation can again be seen. 
+                    Some that stands out is how China has overtaken everyone, highly likely due to its investments in science and technology.
+                
+                <br><br><br><br>
+
+                </p>
+                 
+            </section>
+            <section class="step">
+                <p>
+                    <h2>Isn't India a better Service economy than China?</h2>
+                These plots show that India is better than China in terms of export of ICT services and not services in general. The image about India being better than China is 
+                thus built largely upon the ICT sector. However, even in that both India and China are quite closely placed as can be seen.
+                </p>
+            
+            </section>
+            <section class="step">
+                Finally, I compared similar trends across some other nations to ensure that China and India are not behaving anomalously and similar behavior can be seen in general. 
+                This was essential to make logical conclusions from the exploratory analysis. For instance, we can see that the number of patents filed by japan and its GDP curve 
+                almost follow the same slope. We also see that as Japan’s net trade in goods dipped a little below zero around 2013-2014, its GDP also dipped. We see a downward trend 
+                in Japan’s number of patents filed starting 2005 and we also see a downward trend in the net import of goods by Japan starting 2005. The effects on the economy at large, 
+                i.e., GDP are expected to lag this effect as can be somewhat seen in the small but noticeable flattening of slope of Japan’s GDP around 2010. 
+                Similar correlations can be seen for the other countries shown in the plot as well. 
+                
+                <svg id = 'legend3' width = '400px' height = '350px'></svg>
+                
+            </section>
+            <section class="step">
+                <h1>The End</h1>
+                <p>
+                    The aim is to add at least two interactive charts by the deadline for A4.
+                    I would most likely expand this assignment into my final project. I am sure there will be a lot more data on India. ;)
+                    <br><br>
+                    A big thanks to <a href = 'https://github.com/cuthchow/college-majors-visualisation'>Cuthbert Chow</a> for publicly sharing the code for the scroller
+                    and writing a   <a href = 'https://towardsdatascience.com/how-i-created-an-interactive-scrolling-visualisation-with-d3-js-and-how-you-can-too-e116372e2c73'>great article </a>to go with it.
+                    <p>Datasets by <a href = 'https://github.com/ZeningQu/World-Bank-Data-by-Indicators'>ZeningQu</a></p>
+                
+                    <br><br>
+                </p>
+                <span></span><span></span><span></span>                
+            </section>
+           
+
+        </div>
+        <div id="vis">
+           
+        </div>
+ 
+    </div>
+
+    
+
+    
+    <script src = 'scroller.js'></script>
+    <script src = 'sections.js'></script>
+
+</body>
+</html>
