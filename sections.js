@@ -42,7 +42,7 @@ function drawInitial(){
     
     
     svg.append('g').append('image').attr('class', 'nehruModi')
-    .attr('xlink:href', 'https://github.com/6859-sp21/a4-worldbankdata/blob/4432d6417e9f952b4e6fd725b5f43605adf4371a/nehruModi.png')
+    .attr('xlink:href', 'https://raw.githubusercontent.com/6859-sp21/a4-worldbankdata/main/nehruModi.png')
     .attr('width', 1000)
     .attr('height', 950)
     .attr('opacity', 1)
