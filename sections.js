@@ -42,7 +42,7 @@ function drawInitial(){
     
     
     svg.append('g').append('image').attr('class', 'nehruModi')
-    .attr('xlink:href', '/Users/geetkalra/Desktop/india growth story uploaded/data/nehruModi.png')
+    .attr('xlink:href', 'data/nehruModi.png')
     .attr('width', 1000)
     .attr('height', 950)
     .attr('opacity', 1)
