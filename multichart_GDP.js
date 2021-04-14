@@ -153,7 +153,7 @@ if (cities.length > 1){
   .attr('font-family', 'Helvetica Neue, Arial')
   .attr('font-weight', 500)
   .attr('font-size', 80)
-  .text(cities[0].id+"*");
+  .text(cities[0].id);
 
     }
 
