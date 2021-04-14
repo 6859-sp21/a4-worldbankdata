@@ -37,4 +37,3 @@ With this in mind, I decided to interactively tell the story of a part of what I
 The most time consuming part for me was learning HTML,CSS, Javascript and D3, all together, in a span of 2 weeks. In terms of man-hours I would have worked more than  50 hours in total. However, that is because I had to learn and use the tools at the same time.  
 
 Scrolly-telling and unrolling line charts took a lot of time. 
-![image](https://user-images.githubusercontent.com/70688232/114652587-2a244b00-9cb4-11eb-9274-669c2946f611.png)
