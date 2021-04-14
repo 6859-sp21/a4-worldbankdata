@@ -1,0 +1,189 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js'></script>
+
+    <meta property='og:title' content='Best College Majors'/>
+    <meta property='og:image' content='https://github.com/cuthchow/college-majors-visualisation/blob/master/preview.png'/>
+    <meta property='og:description' content='This interactive, scrollable data visualisation will take you on a journey through all of the different college majors in the United States, and compare how they stack up in terms of median graduate salary, gender ratios, employability, and other factors. '/>
+    <meta property='og:url' content='https://cuthchow.github.io/college-majors-visualisation/'/>
+
+
+    <title>India Growth Story</title>
+</head>
+
+<!-- style="background-color:grey;" -->
+<body style="background-color:white;">
+    <style>
+
+        /* .axis--x path {
+          display: none;
+        } */
+        .axis {font: 18px sans-serif;};
+        .overlay {
+          fill: none;
+          pointer-events: all;
+        }
+        
+        .focus circle {
+          fill: none;
+          stroke: steelblue;
+        }
+        
+        .line {
+          fill: none;
+          stroke: steelblue;
+          stroke-width: 5.5px;
+        }
+     
+        </style>
+
+
+
+
+    <!-- <div id="info">
+        a
+    </div> -->
+    <img src="https://raw.githubusercontent.com/6859-sp21/a4-worldbankdata/main/nehruModi.png" alt="">
+    <div id="tooltip"></div>
+    <div id="graphic">
+        <div id="sections">
+            <section class="step">
+                <div class="title"></div>
+                <br><br>
+                <br><br>
+                <br><br>
+                
+                
+                <h1>India's economic growth since 1960</h1>
+           
+                <p>
+                    <br><br>
+                    </p>
+                <p>
+                    <br><br>
+                <br><br>
+                    <br><br>
+                    We go on a short journey and look at how India's GDP has grown over the last few decades and how it compares
+                    with other countries. <br><br>
+
+                <br><br>
+                
+                
+                </p>
+           
+                
+                
+            </section>
+            <section class = 'step'>
+                <br><br>
+                <h1>  GDP (Billion US $)*</h1>
+                
+    
+                <p>
+                  
+                    In early 1990s, India underwent many economic reforms and has made a huge progress since <br><br>
+                
+                </p>
+                <p>(Compare China's growth with India to see an interesting trend!)</p>
+                <p></p>
+                <!-- <button id="lowerthree">Lowest 3 poorest</button> -->
+                <button id="topthree", class = "butt">India Vs Richest</button>
+                 <br>
+                 Countries in descending order of GDP in 2019. (Note: India is #7 on list).
+                 Select and click Compare with India.
+                 <br>
+                 
+                 <select id="selectButton2", size="10">select from here</select>
+                 <div>
+                 
+                 <!-- <br> -->
+                 <button id="add-btn2", class = "butt">Compare with India</button>
+                 <button id="replay2", class = "butt">Only India</button>
+                </div>
+                <h4>(Hover to see details; To remove line, click between data points. Browser's search can be used to locate countries in this list)</h4>
+                <h5>*Zero values indicate missing data</h5>
+                <br><br>
+            </section>
+            <section class="step">
+                <br><br>
+                <h1> GDP per capita (US $)*</h1>
+                
+    
+                
+                    
+                GDP per capita exposes the division of wealth amongst Indian people and highlights the stark divide that exists between rich and poor. <br><br>
+                 
+                 Countries in descending order of GDP per capita in 2019 (Note: India is #143 on list). 
+                 Select and compare with India.
+                 <br>
+                 <br>
+                 
+                 <button id="lowerten", class = "butt">India Vs Poorest</button>
+                 <button id="topten", class = "butt">India Vs richest</button>
+                 <br>
+                 <select id="selectButton", size="10">select from here</select>
+            
+                 <button id="add-btn", class = "butt">Compare with India</button>
+                 <button id="replay", class = "butt">Only India</button>
+                 <h4>(Hover to see details; To remove line, click between data points.Browser's search can be used to locate countries in this list)</h4>
+                <h5>*Zero values indicate missing data</h5>
+                <br><br>
+                
+            </section>
+        
+            <section class="step">
+                <br><br>
+                <br><br>
+                <h1>The End</h1>
+                <p>
+                    <br><br>
+                    We see that even though India as a country is compared to the richest countries of the world,
+                    Indian people can be compared to the poorest people of the world. 
+                    Comparing just GDP and GDP per capita allowed us to see this. <br><br>
+
+                <br><br>
+                
+                
+                </p>
+                <p>
+                 
+                    A big thanks to <a href = 'https://github.com/cuthchow/college-majors-visualisation'>Cuthbert Chow</a> for publicly sharing the code for the scroller
+                    and writing a   <a href = 'https://towardsdatascience.com/how-i-created-an-interactive-scrolling-visualisation-with-d3-js-and-how-you-can-too-e116372e2c73'>great article </a>to go with it.
+                    <p>Datasets by <a href = 'https://data.worldbank.org/indicator/NY.GDP.MKTP.KD'>World Bank</a></p>
+                    All images were taken from the internet and are under a creative commons license. 
+                    Intro image is composed of images from different sources.  
+                    <br><br>
+                </p>
+                <span></span><span></span><span></span>                
+            </section>
+           
+
+        </div>
+        <div id="vis">
+           
+        </div>
+ 
+    </div>
+
+    
+
+    
+    <script src = 'scroller.js'></script>
+    <script src = 'sections.js'></script>
+    <script src = "gdp.js"></script>
+    <script src = "gdp2ndViz.js"></script>
+    <script src = "modiji.js"></script>
+    <script src = "littleGirl.js"></script>
+    <script src = "indiaVchina.js"></script>
+    <script src="multichart.js"></script>
+    <script src="multichart_GDP.js"></script>
+    <!-- <script src="multichart.js"></script> -->
+    <!-- <script src ="multichart_multicountries"></script> -->
+
+</body>
+</html>
