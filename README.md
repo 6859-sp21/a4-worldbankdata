@@ -19,7 +19,7 @@ To make sure that the user has a seamless experience in the exploratory process,
 6.	4 buttons to plot some quick summary graphs that the users are generally interested in. People are generally interested in seeing the comparison with the richest/poorest countries. 
 7.	Added a special button just to plot data for India as the main theme of the visualization is conveying India’s story
 8.	While plotting single line curves, the name of the country is written in big bold letters in the backdrop. While plotting multiple lines, the names of the countries are instead highlighted next to the line itself, allowing for easy viewing. The names of the countries and lines have also been color coded for ease of viewing and association.
-9.	I was earlier considering to draw circles on top of the smooth line to highlight the locations of the datapoints
+9.	I was earlier considering to draw circles on top of the smooth line to highlight the locations of the datapoints but that was not visually pleasing.
 10.	 I was also split between using d3.curveLinear vs d3.curveNatural to depict the paths. The linear function returns a jagged looking line, however true to the data being represented. d3.curveNatural returns a perfectly smooth and good looking line. However, at some locations while interpolation, it caused the GDP to go below 0. I thus decided to stick with d3.curveLinear in spirit of communicating data truthfully. 
 11.	Organized the countries in descending order of their 2019 GDP (or GDP per capita) in the selection lists. This allows another dimension for exploration to the user. 
 
