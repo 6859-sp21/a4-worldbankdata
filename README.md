@@ -7,7 +7,7 @@ My intention is to develop my A4 work more and use it as step towards the final 
 **Rationale for design decisions**
 
 As I am telling a story, the scrolly telling format was the best suited for the job. The idea is to take the user on a journey through time and let them see how events unfolded in the past, for now, through data. 
-The story is an investigative assessment of a trend that is being seen and what it might be trying to tell us. We see India’s GDP amongst the top 10 countries in the world, however, India’s GDP is at #143, amongst the poorest. To highlight this, I provide two interactive and animated visualizations, one for comparing GDPs and the other for comparing GDP per capita. 
+The story is an investigative assessment of a trend that is being seen and what it might be trying to tell us. We see India’s GDP per capita is amongst the top 10 countries in the world, however, India’s GDP is at #143, amongst the poorest. To highlight this, I provide two interactive and animated visualizations, one for comparing GDPs and the other for comparing GDP per capita. 
 
 To make sure that the user has a seamless experience in the exploratory process, these are some of the design decisions that I made:
 
