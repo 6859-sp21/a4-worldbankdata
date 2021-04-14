@@ -27,6 +27,7 @@ To make sure that the user has a seamless experience in the exploratory process,
 
 
 **Development process**
+
 As I worked alone on the project, the most challenging part was making sure I stick to one clear goal as it is easy to digress (being the only person, I would’ve been flexible to switch mid-way). 
 Something that I realized was that no dataset is the “best” datasets and every dataset has a story to tell. I realized this after the initial two assignments, A0 and A1. We spent more than two weeks looking at a dataset which had around 100 datapoints. 
 
