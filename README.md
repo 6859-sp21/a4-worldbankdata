@@ -1,4 +1,5 @@
 **Overall theme**
+
 I was interested in telling one of India’s many stories in a fun and interactive way. It was a way for me to learn more about my home country as well as learn visualization techniques. I decided to start with the assessment of the economic growth that India has seen in the last few decades. 
 In A2: Exploratory data analysis, I had taken up a similar topic where I compared India’s growth to China’s and based on correlation studies identified some interesting trends that separate the two countries. For instance, the number of researchers and patents being published by both countries since their economic growths starting diverging. 
 My intention is to develop my A4 work more and use it as step towards the final project. I thus have designed a scrolly-telling themed visualization where a user can compare the GDP as well as GDP per capita of India to different countries of the world. Both of these are interactive visualizations that allow a “local analysis” of the visualization itself, and also fit in the broader theme of telling India’s economic story. 
